@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>HTML DOM Events</h1>
+    <h2>
+        The onclick Event exercises based
+        <a href="https://www.w3schools.com/jsref/event_onclick.asp">w3schools' collection.</a>
+    </h2>
+    <hr />
+    <!-- demo-1 -->
+    <h3>Click to display the time.</h3>
+
+    <button onclick="getElementById('demo-1').innerHTML=Date()">
+        What is the time?
+    </button>
+
+    <p id="demo-1"></p>
+    <hr />
+    <!-- demo-2  -->
+    <h3 id="demo-2">Click this text to change its color to red.</h3>
+
+    <hr />
+    <!-- demo-3 -->
+    <h3>Clicking "copy" copies the text value from Field1 to Field2.</h3>
+    <p>
+        Mailing Address:
+        <input type="text" id="field1" value="Sun City, Ahmedabad, India!" />
+    </p>
+    <p>Permanent Address: <input type="text" id="field2" /></p>
+    <p>
+        If permanent address is the same as mailing address,
+        <button id="demo-3">Copy</button> it
+    </p>
+    <hr />
+    <!-- demo-4 -->
+    <h3>Clicking anywhere in the window will change the backround color.</h3>
+    <hr />
+    <!-- demo-5 -->
+    <h3>Click the show button to toggle the hidden content on/off.</h3>
+    <button id="demo-5">Show/Hide</button>
+    <div id="hidden" class="hidable">
+        <p>Boom! Now you know the secret!</p>
+    </div>
+</body>
+
+</html>
